@@ -47,20 +47,16 @@ const answer = decrypt(encrypted, key);
 submitBtn.addEventListener('click', () => {
 
     if (codeInput.value.toUpperCase() === answer) {
-
         errorText.classList.add('hidden');
-
         document.body.classList.add('unlocked');
-
+        
         codeInput.disabled = true;
         submitBtn.disabled = true;
 
         setTimeout(() => {
             window.location.href = 'mnigsksiid.html';
         }, 1500);
-
     } else {
-
         errorText.textContent = "...NO CASE FOUND";
         errorText.classList.remove('hidden');
 
