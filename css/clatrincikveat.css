@@ -286,3 +286,205 @@ body::after {
             rotate(0.08deg);
     }
 }
+
+@media (max-width: 600px) {
+
+    #main {
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    #ticket {
+        width: 92vw;
+        max-width: 92vw;
+
+        box-shadow:
+            0 0 25px rgba(0, 0, 0, 0.8);
+
+        transform:
+            translateY(120vh)
+            translateX(-6px)
+            rotate(-6deg)
+            scale(0.75);
+
+        animation:
+            ticketRevealMobile 3.8s cubic-bezier(0.18, 0.8, 0.25, 1) forwards,
+            ticketPresenceMobile 4s 3.8s ease-in-out infinite;
+    }
+
+
+    @keyframes ticketRevealMobile {
+
+        0% {
+            opacity: 0;
+
+            transform:
+                translateY(120vh)
+                translateX(-6px)
+                rotate(-6deg)
+                scale(0.75);
+        }
+
+        15% {
+            opacity: 0.08;
+
+            transform:
+                translateY(80vh)
+                translateX(8px)
+                rotate(-5deg)
+                scale(0.78);
+        }
+
+        23% {
+            opacity: 0.45;
+
+            transform:
+                translateY(55vh)
+                translateX(-6px)
+                rotate(3deg)
+                scale(0.84);
+        }
+
+        29% {
+            opacity: 0.08;
+
+            transform:
+                translateY(43vh)
+                translateX(7px)
+                rotate(-2deg)
+                scale(0.88);
+        }
+
+        33% {
+            opacity: 0.75;
+
+            transform:
+                translateY(36vh)
+                translateX(-5px)
+                rotate(2deg)
+                scale(0.91);
+        }
+
+        43% {
+            opacity: 0.9;
+
+            transform:
+                translateY(14vh)
+                translateX(3px)
+                rotate(-1.5deg)
+                scale(0.97);
+        }
+
+        55% {
+            opacity: 1;
+
+            transform:
+                translateY(-1vh)
+                translateX(-2px)
+                rotate(0.7deg)
+                scale(1.015);
+        }
+
+        64% {
+            transform:
+                translateY(6px)
+                translateX(1px)
+                rotate(-0.35deg)
+                scale(0.995);
+        }
+
+        73% {
+            transform:
+                translateY(-3px)
+                translateX(-1px)
+                rotate(0.15deg)
+                scale(1.005);
+        }
+
+        84% {
+            transform:
+                translateY(2px)
+                translateX(0)
+                rotate(-0.1deg)
+                scale(1);
+        }
+
+        100% {
+            opacity: 1;
+
+            transform:
+                translateY(0)
+                translateX(0)
+                rotate(0deg)
+                scale(1);
+        }
+    }
+
+
+    @keyframes ticketPresenceMobile {
+
+        0%,
+        68%,
+        100% {
+            transform:
+                translateY(0)
+                translateX(0)
+                rotate(0deg);
+
+            opacity: 1;
+        }
+
+        72% {
+            transform:
+                translateY(-2px)
+                translateX(1px)
+                rotate(0.08deg);
+
+            opacity: 1;
+        }
+
+        75% {
+            transform:
+                translateY(1px)
+                translateX(-2px)
+                rotate(-0.12deg);
+
+            opacity: 0.9;
+        }
+
+        78% {
+            transform:
+                translateY(0)
+                translateX(0)
+                rotate(0deg);
+
+            opacity: 1;
+        }
+
+        87% {
+            opacity: 1;
+        }
+
+        88% {
+            opacity: 0.55;
+        }
+
+        89% {
+            opacity: 1;
+        }
+
+        94% {
+            transform:
+                translateY(2px)
+                translateX(1px)
+                rotate(-0.1deg);
+        }
+
+        96% {
+            transform:
+                translateY(-1px)
+                translateX(-1px)
+                rotate(0.07deg);
+        }
+    }
+}
