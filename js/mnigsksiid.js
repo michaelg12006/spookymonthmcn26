@@ -1,6 +1,27 @@
 const board = document.getElementById('chessboard');
 const message = document.getElementById('message');
 
+/*
+ * ============================================================
+ * COLD CASE #102 — READ ME
+ * ============================================================
+ *
+ * This puzzle is meant to be solved through the website.
+ *
+ * Please do NOT:
+ *   - Inspect or modify the DOM to reveal the solution
+ *   - Override JavaScript variables in the console
+ *   - Trigger the success state manually
+ *   - Skip the puzzle by changing the page location
+ *
+ * The code may be visible, but the investigation is the game.
+ *
+ * If you bypass the puzzle:
+ *
+ *              ...you were never meant to find this.
+ *
+ * ============================================================
+ */
 
 const encrypted = "JlgtVyVQN1M=";
 const key = "coldcase";

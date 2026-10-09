@@ -2,6 +2,28 @@ const codeInput = document.getElementById('code-input');
 const errorText = document.getElementById('error');
 const submitBtn = document.getElementById('submit-button');
 
+/*
+ * ============================================================
+ * COLD CASE DATABASE — READ ME
+ * ============================================================
+ *
+ * Please solve the case as intended.
+ *
+ * Do NOT use the browser console, DevTools, DOM manipulation,
+ * or JavaScript overrides to bypass the puzzle.
+ *
+ * The purpose of this project is to discover the answers
+ * through the clues and interactions provided by the website.
+ *
+ * If you're reading this source code:
+ *   You found the code.
+ *   You didn't solve the case.
+ *
+ * Have fun. Investigate properly.
+ *
+ * ============================================================
+ */
+
 errorText.classList.add('hidden');
 
 const encrypted = "NycpKycuISA=";
